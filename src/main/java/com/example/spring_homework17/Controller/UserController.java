@@ -18,7 +18,7 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping("/get")
-    public ResponseEntity getAllCoffee(){
+    public ResponseEntity getAllUser(){
         List<User> userList = userService.getAllUser();
         return ResponseEntity.status(200).body(userList);
     }
